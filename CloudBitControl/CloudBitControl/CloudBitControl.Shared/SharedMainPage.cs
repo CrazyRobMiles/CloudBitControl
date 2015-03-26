@@ -28,8 +28,8 @@ namespace CloudBitControl
     public sealed partial class MainPage : Page
     {
 
-        string id = "00e04c1ef00d";
-        string accessToken = "fac34b169ee0eafda9d0815611c4f2f6976ed12454177ac8e2f65afe56b4be01";
+        string id = "Put your ID Here";
+        string accessToken = "Put your Access Token here";
 
         LittleBitsCloudBit cloudBit = null;
 
@@ -63,7 +63,8 @@ namespace CloudBitControl
                 cloudBit = new LittleBitsCloudBit(id, accessToken);
             }
             base.OnNavigatedTo(e);
-        }
+        }
+
 
         private async void writeButton_Click(object sender, RoutedEventArgs e)
         {
